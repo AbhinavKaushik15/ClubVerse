@@ -19,7 +19,7 @@ const ScrollTop = () => {
   }, []);
 
   return (
-    <div>
+    <div className='w-full'>
       {visible && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
