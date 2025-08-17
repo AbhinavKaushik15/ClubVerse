@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-const ScrollTop = () => {
+const ScrollTop: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const ScrollTop = () => {
   }, []);
 
   return (
-    <div className='w-full'>
+    <div className="w-full">
       {visible && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
